@@ -2,8 +2,8 @@ var https = require('https');
 
 // CONFIGURATION #######################################################################################################
 
-var token = 'xoxp-225895574304-225895574656-230549264020-9d3e9172248efe9fc43b2e3d8f483405';
-var channel = 'C6MSBGZT2';
+var token = process.env.TOKEN;
+var channel = process.env.CHANNEL;
 var privateChannel = false;
 var delay          = 300; // delay between delete operations in millisecond
 
